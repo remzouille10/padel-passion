@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#1748e8">
+<meta name="description" content="Padel — carnet personnel de progression au padel.">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="stylesheet" href="./style.css">
+<title>Padel</title>
+</head>
+<body>
+<div id="app" class="app-shell">
+<header class="topbar app-titlebar"><h1>Ma progression de Padel</h1></header>
+<main id="view" class="view" aria-live="polite"></main>
+<nav class="bottom-nav" aria-label="Navigation principale">
+  <button data-tab="home" class="nav-item active"><span>⌂</span>Accueil</button>
+  <button data-tab="matches" class="nav-item"><span>▤</span>Matchs</button>
+  <button id="newMatch" class="nav-add" aria-label="Créer un match">＋</button>
+  <button data-tab="players" class="nav-item"><span>♙</span>Joueurs</button>
+  <button data-tab="settings" class="nav-item"><span>⚙</span>Réglages</button>
+</nav>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="./app.js" defer></script>
+</body></html>
